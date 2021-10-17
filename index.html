@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Shopping Cart</title>
@@ -15,45 +16,76 @@
         <div class="container-fluid">
         <h3>e-store</h3>
         <div class="justify-content-end">
-        <a src="">Home</a>
-        <a src="">Contact Us</a>
+          <a href="./index.html">Cart
+          <i class="bi bi-cart3"></i>
+          </a>
+          <span class="total-items-in-cart">
+          0
+          </span>
         </div>
         </div>
         </nav>
     </header>
     <main class="container">
-        <!-- Product List -->
-        <div class="row d-flex justify-content-center p-4">
-            <div class="card me-4" style="width: 18rem;">
-              <img src="./images/desktop.jpg" class="card-img-top mt-2" alt="desktop">
-              <div class="card-body">
-                <h5 class="card-title">Desktop</h5>
-                <p class="card-text">$2000</p>
-                <input type="text">
-                <button type="button" class="btn btn-primary mt-2">Add to cart</button>
-              </div>
-            </div>
-            <div class="card me-4" style="width: 18rem;">
-              <img src="./images/laptop.jpg" class="card-img-top mt-2" alt="laptop">
-              <div class="card-body">
-                <h5 class="card-title">Laptop</h5>
-                <p class="card-text">$1200</p>
-                <input type="text">
-                <button type="button" class="btn btn-primary mt-2">Add to cart</button>
-              </div>
-            </div>
-            <div class="card me-4" style="width: 18rem;">
-              <img src="./images/tablet.jpg" class="card-img-top mt-2" alt="tablet">
-              <div class="card-body">
-                <h5 class="card-title">Tablet</h5>
-                <p class="card-text">$800</p>
-                <input type="text">
-                <button type="button" class="btn btn-primary mt-2">Add to cart</button>
-              </div>
-            </div>
+      <div class="products">
+           <!-- Product List -->
+      </div>
+      
+        <!-- Listed in the cart section -->
+        <!-- <table>
+          <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <th>Desktop</th>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Laptop</th>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Tablet</th>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th colspan="3">Total</th>
+            <td></td>
+            
+          </tr>
+        </table> -->
+        <div class="cart">
+          <div class="cart-header">
+              <div class="column1">Item</div>
+              <div class="column2">Unit price</div>
+              <div class="column3">Units</div>
           </div>
+          <div class="cart-items">
+              <!-- render cart items here -->
+          </div>
+          <div class="cart-footer">
+              <div class="subtotal">
+                  Subtotal (0 items): $0
+              </div>
+              <div class="checkout">
+                  Proceed to checkout
+              </div>
+          </div>
+      </div>
+  </div>
     </main>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
