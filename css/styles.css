@@ -4,36 +4,33 @@
     box-sizing: border-box; 
     font-family: Rubik;
   }
-
   html {
     font-size: 16px;
   }
-
+  /* navigation & header */
   .navbar {
     height: 100px;
-    /* background-color: rgb(58, 145, 127); */
-    background-color: rgb(73, 150, 150);
-    color: white;
+    background-color: rgb(73, 150, 150, 0.3);
+    color: black;
         
   }
-
   header a , i{
-    color:white;
+    color:black;
   }
-
   a{
       padding: 10px;
   }
-
+  /* product cards */
  .card > img{
     border-radius: 8px;
    }
 
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4); */
+    box-shadow: 0 4px 8px 0 rgb(73, 150, 150, 0.4);
    }
  .btn {
-  background-color: rgb(73, 150, 150); ;
+  background-color: rgb(73, 150, 150); 
   color: white
 }
   .products{
