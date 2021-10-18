@@ -27,23 +27,22 @@ render();
 let cart = [];
 function addToCart(id) {
  console.log(id);
-if(cart.some((item) => item.id === id)) {
-    alert("Product already in the cart!");
+if(cart.some((item) => item.id === id)) { //checking if the product already exist
+    console.log("Product already in the cart!");
+   
 } else {
     const item = products.find((product) => product.id === id);
     // console.log(item);
     cart.push(item);      
   
-    // console.log("Cart Array..", cart);
+    console.log("Cart Array..", cart);
 }
 
- updateCart();
+
+renderCartItems();
 }
 
-//updating the cart section
-function updateCart() {
-    renderCartItems();
-}
+
 
 //rendering the cart section with selected items
 function renderCartItems() {
@@ -51,13 +50,13 @@ function renderCartItems() {
     cart.forEach((item) => {
         cartItemsDiv.innerHTML += `
             <div class="cart-item">
-            <div class="item-info">
+            <div class="item-info column1">
                 <h4>${item.name}</h4>
             </div>
-            <div class="unit-price">
+            <div class="unit-price column2">
                 <small>$</small>${item.price}
             </div>
-            <div class="units">
+            <div class="column3 units">
                 <div class="number">${item.quantity}</div>
             </div>
             </div>

@@ -7,8 +7,8 @@
 
   html {
     font-size: 16px;
-    
   }
+
   .navbar {
     height: 100px;
     /* background-color: rgb(58, 145, 127); */
@@ -16,9 +16,11 @@
     color: white;
         
   }
+
   header a , i{
     color:white;
   }
+
   a{
       padding: 10px;
   }
@@ -30,7 +32,7 @@
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
    }
-.btn {
+ .btn {
   background-color: rgb(73, 150, 150); ;
   color: white
 }
@@ -46,35 +48,28 @@
 }
 /* cart items */
 .cart-items {
-  max-height: calc(100vh - 247px);
+  display:table-row;
+  padding: 10px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.column1, .column2, .column3 {
+  display:table-row;
+  padding: 10px 0;
   overflow-y: auto;
   overflow-x: hidden;
 }
 /* cart footer */
 .cart-footer {
   width: 100%;
-  
   position: absolute;
   bottom: 0;
   left: 0;
-
-  border-left: 1px solid rgb(var(--right-side-bg-color));
 }
 .cart-footer div {
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 15px 0;
-
   font-size: 1.3rem;
 }
-.cart-footer .subtotal {
-  background-color: white;
-}
-.cart-footer .checkout {
-  background-color: rgb(223, 231, 243);
-
-  cursor: pointer;
-}
-  
