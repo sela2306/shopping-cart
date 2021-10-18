@@ -1,4 +1,5 @@
 ### Shopping Cart web app
+Create simple shopping cart using HTML, CSS and JavaScript.
 ## Requirement
 1. Pre-populated array of object as products.
 2. Product displays with image, name & price.
